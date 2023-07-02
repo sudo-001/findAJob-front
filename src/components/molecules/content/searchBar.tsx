@@ -21,7 +21,7 @@ function SearchBar({ }: Props) {
     setCity(e.target.value);
   }
 
-  const handleSubmit = (e: MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // REQUETE VERS LE BACKEND POUR RECHERCHER UN JOB
     console.log("REQUETE VERS LE BACKEND POUR RECHERCHER UN JOB")
