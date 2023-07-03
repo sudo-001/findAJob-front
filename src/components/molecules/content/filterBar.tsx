@@ -25,7 +25,7 @@ function FilterBar({ }: Props) {
                 </select>
             </div>
 
-            <div className='flex items-center relative'>
+            <div className='flex w-full md:w-fit items-center relative'>
                 <p className='text-[#7F8FA0] font-semibold'>Remote Only</p>
                 <div className={`w-10 h-6 ml-2 rounded-full border relative flex items-center transition-all duration-200 ${remote ? 'bg-[#0066FF]' : 'bg-[#D9D9D9]'}`}>
                     <div className={` absolute h-5 w-5 rounded-full transition-all duration-200 ease-in-out border cursor-pointer 

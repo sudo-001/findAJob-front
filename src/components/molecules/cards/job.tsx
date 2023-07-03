@@ -17,7 +17,7 @@ function Job(props: Props) {
     const {enterpriseName, location, jobTitle, jobType, timeElapsed, description } = props;
 
     return (
-        <Link href="" className='rounded-[5px] flex flex-col shadow-md transition duration-500  py-8 items-start justify-center hover:bg-[#0066FF] hover:text-[#fff] hover:shadow-lg hover:-translate-y-1 hover:cursor-pointer px-4 '>
+        <Link href="" className='rounded-[5px] flex flex-col shadow-md transition duration-500  py-8 items-start justify-center hover:bg-[#0066FF] hover:text-[#fff] hover:shadow-lg hover:-translate-y-1 hover:cursor-default px-4 '>
             
             <div className='flex flex-row w-full items-center'>
                 <div className='rounded-full w-10 h-10 overflow-hidden flex justify-center items-center bg-[#000]'>

@@ -7,7 +7,7 @@ type Props = {}
 function SearchHeader({}: Props) {
   return (
     <>
-        <div className='py-4 px-4 flex flex-col bg-[#fff] w-screen'>
+        <div className='py-16 md:py-4 px-4 flex flex-col bg-[#fff] w-screen'>
             <SearchBar />
             <FilterBar />
         </div>
