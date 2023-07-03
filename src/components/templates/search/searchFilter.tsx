@@ -5,8 +5,8 @@ type Props = {}
 
 function SearchFilter({}: Props) {
   return (
-    <div className='px-8 md:px-12 flex flex-col md:flex-row h-[95vh] justify-center items-center'>
-        <div className='w-full bg-red-600 flex items-center justify-center'>
+    <div className='px-8 md:px-12 flex flex-col md:flex-row h-[50vh] justify-center items-center'>
+        <div className='w-full flex items-center justify-center'>
           <SearchHeader />
         </div>
     </div>

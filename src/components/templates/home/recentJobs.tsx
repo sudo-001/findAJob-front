@@ -6,7 +6,7 @@ type Props = {}
 
 function RecentJobs({ }: Props) {
     return (
-        <div className='h-[85vh] bg-[#fff] flex flex-col px-8 md:px-12 '>
+        <div className='h-max md:h-[85vh] bg-[#fff] flex flex-col px-8 md:px-12 '>
 
             {/* Section title bar */}
             <HomeHeader titleTextOne='Most Recent' titleTextTwo='Jobs' showAllText='Explore' />

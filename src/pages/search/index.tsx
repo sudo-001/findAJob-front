@@ -1,4 +1,4 @@
-import SearchFilter from '@/components/templates/details/searchFilter'
+import SearchFilter from '@/components/templates/search/searchFilter'
 import React from 'react'
 
 type Props = {}
