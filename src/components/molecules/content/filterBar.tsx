@@ -17,7 +17,7 @@ function FilterBar({ }: Props) {
                 </select>
             </div>
 
-            <div className=' w-full md:w-max'>
+            <div className='my-4 md:my-0 w-full md:w-max'>
                 <p className='font-bold'>Type: </p>
                 <select name="type" className='bg-[#fff] border border-[#D9D9D9] cursor-pointer text-[#0066FF] font-semibold py-1 px-3 mt-2 w-full rounded-[5px] focus:outline-none focus:ring-0 '>
                     <option value="Full-time" className='text-[#8f959b] font-semibold cursor-pointer'>--any--</option>
@@ -25,7 +25,7 @@ function FilterBar({ }: Props) {
                 </select>
             </div>
 
-            <div className='flex w-full md:w-fit items-center relative'>
+            <div className='flex w-full my-4 md:my-0 md:w-fit items-center relative'>
                 <p className='text-[#7F8FA0] font-semibold'>Remote Only</p>
                 <div className={`w-10 h-6 ml-2 rounded-full border relative flex items-center transition-all duration-200 ${remote ? 'bg-[#0066FF]' : 'bg-[#D9D9D9]'}`}>
                     <div className={` absolute h-5 w-5 rounded-full transition-all duration-200 ease-in-out border cursor-pointer 

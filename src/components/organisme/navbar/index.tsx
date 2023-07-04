@@ -7,6 +7,8 @@ import { IsActiveRoute } from '@/utils/shared/isActive'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 
 type Props = {}
 
@@ -15,7 +17,7 @@ function Navbar({ }: Props) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [pathName, setPathName] = useState(pathname)
-
+    const [mobileOpen, setMobileOpen] = useState(false);
 
     // This useEffect function concern the browser scroll
     useEffect(() => {
@@ -75,6 +77,49 @@ function Navbar({ }: Props) {
 
 
                 <div className=' md:w-1/3 lg:w-1/5 md:flex flex-row justify-evenly items-center hidden'>
+
+                    <SignUpBtn link="" text='Sign Up' />
+
+                    <SignInBtn text='Login' />
+                </div>
+
+                {/* Hamburger Menu */}
+                <div className={`md:w-1/3 transition-all duration-200 md:hidden`}>
+                    <AiOutlineClose className={`w-6 h-6 font-bold ${mobileOpen == true ? 'hidden' : 'block'}`} onClick={() => { setMobileOpen(!mobileOpen), console.log(mobileOpen) }} />
+                    <CiMenuFries className={`w-6 h-6 ${mobileOpen == true ? 'block' : 'hidden'}`} onClick={() => { setMobileOpen(!mobileOpen); console.log(mobileOpen) }} />
+                </div>
+
+
+            </div>
+            {/* Mobile Menu */}
+            <div className={`h-max py-4 flex flex-col md:hidden transition-all duration-300 ${mobileOpen === true ? 'hidden' : 'block'}`}>
+
+                <ul className={` flex-row list-none justify-around w-3/4 transition-all duration-300 md:hidden ${mobileOpen === true ? 'hidden' : 'block'}`}>
+                    <Link href="/" className={IsActiveRoute('/') ? 'text-[#0066FF]' : 'text-[#7F8FA0]'}>
+                        <li className={`hover:cursor-pointer hover:text-[#0066FF] transition-all duration-100 py-2`} >
+                            Home
+                        </li>
+                    </Link>
+                    <Link href="/search/" className={IsActiveRoute('/search') ? 'text-[#0066FF]' : 'text-[#7F8FA0]'}>
+                        <li className={`hover:cursor-pointer hover:text-[#0066FF] transition-all duration-100 py-2`} >
+                            Find Jobs
+                        </li>
+                    </Link>
+
+                    <Link href="/recommandedJobs" className={IsActiveRoute('/recommandedJobs') ? 'text-[#0066FF]' : 'text-[#7F8FA0]'}>
+                        <li className={`hover:cursor-pointer hover:text-[#0066FF] transition-all duration-100 py-2`}>
+                            Recommanded Jobs
+                        </li>
+                    </Link>
+
+                    <Link href="/dashboard" className={IsActiveRoute('/dashboard') ? 'text-[#0066FF]' : 'text-[#7F8FA0]'}>
+                        <li className={`hover:cursor-pointer hover:text-[#0066FF] transition-all duration-100 py-2`}>
+                            Dashboard
+                        </li>
+                    </Link>
+                </ul>
+
+                <div className={`pt-6 w-2/4 flex flex-row justify-between items-center md:hidden ${mobileOpen === true ? 'hidden' : 'block'}`}>
 
                     <SignUpBtn link="" text='Sign Up' />
 
