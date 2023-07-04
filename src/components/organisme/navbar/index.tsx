@@ -47,7 +47,9 @@ function Navbar({ }: Props) {
             }`} >
             <div className='w-full flex flex-row justify-between items-center'>
                 <div className='flex flex-row md:w-2/3 lg:w-2/4 justify-between items-center'>
-                    <h1 className='text-3xl font-Almarai'>FindA<span className='font-bold'>Job</span></h1>
+                    <Link href="/">
+                        <h1 className='text-3xl font-Almarai'>FindA<span className='font-bold'>Job</span></h1>
+                    </Link>
 
                     <ul className='md:flex flex-row list-none justify-around w-3/4 hidden'>
                         <Link href="/" className={IsActiveRoute('/') ? 'text-[#0066FF]' : 'text-[#7F8FA0]'}>
