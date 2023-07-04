@@ -28,4 +28,4 @@ function PaginationNumber(props: Props) {
     )
 }
 
-export default PaginationNumber
+export default PaginationNumber;
