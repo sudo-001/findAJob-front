@@ -35,7 +35,7 @@ function SearchBar({ }: Props) {
 
         <div className='flex items-center w-full md:w-1/2'>
           <FiSearch className='w-6 h-6 text-gray-700' />
-          <input type="text" placeholder='Name of the job' className=' text-gray-700 bg-white border-0 rounded-md dark:border-gray-600 focus:border-[#fff] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#fff0] px-2 py-2 w-full' value={jobName} onChange={handleChangeJob} />
+          <input type="text" placeholder='Name of the job' className=' text-gray-700 bg-white border-0 rounded-md focus:border-[#fff] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#fff0] px-2 py-2 w-full' value={jobName} onChange={handleChangeJob} />
           <TfiClose width={6} height={6} color='#999999' className='bg-[#F1F4F8] p-1 font-bold w-6 h-6 rounded-full hover:cursor-pointer hover:shadow-md transition-all duration-200' onClick={() => setJobName("")}/>
 
         <span className='hidden md:block text-lg h-full border-l-2 border-[#000] ml-0 md:ml-4 text-[#0000] mx-0 md:mx-1 content-none'>|</span>
@@ -44,7 +44,7 @@ function SearchBar({ }: Props) {
         <div className='flex items-center justify-center my-2 ml:my-0 border-t border-t-[#D9D9D9] md:border-none w-full md:w-1/2'>
           {/* <FaLocationDot width={4} height={4} /> */}
           <HiLocationMarker className="w-6 h-6 text-gray-700" />
-          <input type="text" placeholder='Name of the job' className=' text-gray-700 bg-white border-0 rounded-md dark:border-gray-600 focus:border-[#fff] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#fff0] px-2 py-2 w-full' value={city} onChange={handleChangeCity} />
+          <input type="text" placeholder='Name of the job' className=' text-gray-700 bg-white border-0 rounded-md focus:border-[#fff] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#fff0] px-2 py-2 w-full' value={city} onChange={handleChangeCity} />
           <TfiClose width={6} height={6} color='#999999' className='bg-[#F1F4F8] p-1 font-bold w-6 h-6 rounded-full hover:cursor-pointer hover:shadow-md transition-all duration-200' onClick={() => setCity("")}/>
         </div>
 

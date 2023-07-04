@@ -12,10 +12,10 @@ function Header({ }: Props) {
 
             <div className='w-full h-[50%] md:h-full md:w-1/2 justify-center items-center'>
                 <div className='w-full h-full flex flex-col justify-end md:justify-center'>
-                    <p className='text-4xl md:text-6xl font-bold leading-snug md:leading-tight'>
+                    <p className='text-4xl md:text-6xl font-bold leading-snug md:leading-tight text-[#000]'>
                         <span className='text-[#0066FF]'>Find A Job</span> from the{"\n"} comfort of your home
                     </p>
-                    <p className='text-4xl md:text-5xl font-bold w-max my-4'>500+ jobs</p>
+                    <p className='text-4xl md:text-5xl font-bold w-max my-4 text-[#000]'>500+ jobs</p>
                     <div className=' w-60'>
                         <ExploreBtn text='Explore Now' />
                     </div>
