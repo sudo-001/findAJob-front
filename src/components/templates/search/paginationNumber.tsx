@@ -2,7 +2,7 @@ import React from 'react'
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 type Props = {
-    numberOfPages: number
+    numberOfPages?: number
 }
 
 function PaginationNumber(props: Props) {
