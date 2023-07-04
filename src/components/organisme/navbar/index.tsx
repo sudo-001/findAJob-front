@@ -17,7 +17,7 @@ function Navbar({ }: Props) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [pathName, setPathName] = useState(pathname)
-    const [mobileOpen, setMobileOpen] = useState();
+    const [mobileOpen, setMobileOpen] = useState(true);
 
     // This useEffect function concern the browser scroll
     useEffect(() => {
