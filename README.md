@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Find a joob
+
+https://find-a-job-front.vercel.app/
+
+![Capture d’écran du 2023-07-14 11-12-55](https://github.com/sudo-001/findAJob-front/assets/81199537/d672188d-486b-4acb-9bf4-92f811bdad9b)
+
 
 ## Getting Started
 
